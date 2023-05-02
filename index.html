@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Website with Login & Registration</title>
 </head>
 
@@ -18,14 +19,71 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="https://www.linkedin.com/in/lucas-orbite-vinci-7b5449117/" target="_blank">Contact</a>
             <button class="btnLogin-popup">Login</button>
         </nav>
-
     </header>
-    <main>
 
+    <!--Login & Register-->
+    <main>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+
+    <!--Footer-->
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -33,7 +91,7 @@
                 <p>Follow Us.</p>
 
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
+                    <a href="https://www.instagram.com/lucas.orbite.vinci/" target="_blank" class="footer-link" id="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 
@@ -70,8 +128,10 @@
         </div>
     </footer>
 
-
+    <script src="src/js/scripts.js"></script>
+    <!--Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
-
 
 </html>
